@@ -14,3 +14,4 @@ Options
 * Allows one to disable blinking for critical issues (not backed up or connected to Casper for 30 days)
 * Allows one to reduce critical alert for backup to a lower value (i.e. 7 days)
 * Allows one to set the threshold for space available
+* If Crashplan or Casper clients are broken or have not connected for > 30 days, blinks RED and allows self-service repair with pre-bundled repair packages
