@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>AuthenticationMethod</key>
+			<string></string>
+			<key>EAPClientConfiguration</key>
+			<dict>
+				<key>AcceptEAPTypes</key>
+				<array>
+					<integer>25</integer>
+				</array>
+				<key>TTLSInnerAuthentication</key>
+				<string>MSCHAPv2</string>
+				<key>tlsTrustedServerNames</key>
+				<array/>
+			</dict>
+			<key>EncryptionType</key>
+			<string>WPA</string>
+			<key>HIDDEN_NETWORK</key>
+			<false/>
+			<key>Interface</key>
+			<string>BuiltInWireless</string>
+			<key>PayloadDisplayName</key>
+			<string>WiFi (GenenAir2)</string>
+			<key>PayloadEnabled</key>
+			<true/>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.mdm.krazyeuro.dhcp.gene.com.f8768ac0-e631-012e-4a33-482a1435a5b8.alacarte.interfaces.537d12c0-e632-012e-4a35-482a1435a5b8</string>
+			<key>PayloadType</key>
+			<string>com.apple.wifi.managed</string>
+			<key>PayloadUUID</key>
+			<string>537d12c0-e632-012e-4a35-482a1435a5b8</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>SSID_STR</key>
+			<string>GenenAir2</string>
+		</dict>
+	</array>
+	<key>PayloadDisplayName</key>
+	<string>GenenAir2</string>
+	<key>PayloadIdentifier</key>
+	<string>com.apple.mdm.krazyeuro.dhcp.gene.com.f8768ac0-e631-012e-4a33-482a1435a5b8.alacarte</string>
+	<key>PayloadOrganization</key>
+	<string></string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>f8768ac0-e631-012e-4a33-482a1435a5b8</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

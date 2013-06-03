@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>companyName</key>
+	<string>Genentech</string>
+	<key>debugEnabled</key>
+	<false/>
+	<key>gConnectURL</key>
+	<string>https://gconnect.gene.com</string>
+	<key>globalStatusInterval</key>
+	<string>10</string>
+	<key>installPhaseTxt</key>
+	<string>/private/tmp/com.gene.pleasewait.phase</string>
+	<key>installProgressFile</key>
+	<string>/private/tmp/com.gene.pleasewait.installprogress</string>
+	<key>installProgressTxt</key>
+	<string>/private/tmp/com.gene.pleasewait.progress</string>
+	<key>checkNetwork</key>
+	<false/>
+	<key>saveFilePath</key>
+	<string>/var/gne/sims.plist</string>
+	<key>outputFilePath</key>
+	<string>/var/gne/simsout.plist</string>
+	<key>scriptPlugins</key>
+	<dict>
+		<key>mainRunLoopScripts</key>
+		<dict>
+			<key>com.gene.passwordutility</key>
+			<dict>
+				<key>headerTitle</key>
+				<string>Password Utility Scripts</string>
+				<key>itemScripts</key>
+				<array>
+					<dict>
+						<key>exitCodes</key>
+						<dict>
+							<key>0</key>
+							<dict>
+								<key>scriptFailedDescription</key>
+								<string>Keychain Password</string>
+								<key>scriptFailedTitle</key>
+								<string>Not Configured</string>
+							</dict>
+						</dict>
+						<key>scriptImage</key>
+						<string>keychain_sm</string>
+						<key>scriptFailedTitle</key>
+						<string>Keychain Password</string>
+						<key>scriptFailedDescription</key>
+						<string>Failed to update Keychain Password, code (%@)</string>
+						<key>scriptWarningTitle</key>
+						<string>Keychain Password</string>
+						<key>scriptWarningDescription</key>
+						<string>A new keychain will be created</string>
+						<key>scriptEndTitle</key>
+						<string>Keychain Password</string>
+						<key>scriptEndDescription</key>
+						<string>Successfully updated keychain password</string>
+						<key>scriptTitle</key>
+						<string>Keychain Password</string>
+						<key>scriptDescription</key>
+						<string>Successfully updated keychain password</string>
+						<key>scriptPath</key>
+						<string>changeKeychainPass</string>
+						<key>scriptExtention</key>
+						<string>sh</string>
+						<key>scriptIsInBundle</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>exitCodes</key>
+						<dict>
+							<key>0</key>
+							<dict>
+								<key>scriptFailedDescription</key>
+								<string>GenenAir2 Setup Script</string>
+								<key>scriptFailedTitle</key>
+								<string>Not Configured</string>
+							</dict>
+						</dict>
+						<key>scriptImage</key>
+						<string>wireless_sm</string>
+						<key>scriptTitle</key>
+						<string>GenenAir2 Setup Script</string>
+						<key>scriptFailedTitle</key>
+						<string>GenenAir2 Setup Script Failed</string>
+						<key>scriptFailedDescription</key>
+						<string>Unable to update GenenAir2 wireless credentials, code (%@)</string>
+						<key>scriptWarningTitle</key>
+						<string>GenenAir2 Setup Script</string>
+						<key>scriptWarningDescription</key>
+						<string>No changes to wireless needed</string>
+						<key>scriptEndTitle</key>
+						<string>GenenAir2 Setup Script</string>
+						<key>scriptEndDescription</key>
+						<string>Updated GenenAir2 wireless credentials</string>
+						<key>scriptDescription</key>
+						<string>Updated GenenAir2 wireless credentials</string>
+						<key>scriptPath</key>
+						<string>GenenAir2setup</string>
+						<key>scriptExtention</key>
+						<string>sh</string>
+						<key>scriptIsInBundle</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>exitCodes</key>
+						<dict>
+							<key>0</key>
+							<dict>
+								<key>scriptFailedDescription</key>
+								<string>Updated Cached Password</string>
+								<key>scriptFailedTitle</key>
+								<string>Not Configured</string>
+							</dict>
+						</dict>
+						<key>scriptImage</key>
+						<string>cached_sm</string>
+						<key>scriptEndTitle</key>
+						<string>Updated Cached Password</string>
+						<key>scriptFailedTitle</key>
+						<string>Updating Cached Password Failed</string>
+						<key>scriptFailedDescription</key>
+						<string>Unable to update cached password, code (%@)</string>
+						<key>scriptWarningTitle</key>
+						<string>Updating Cached Password</string>
+						<key>scriptWarningDescription</key>
+						<string>Password did not need to be updated</string>
+						<key>scriptEndDescription</key>
+						<string>Updated Cached Password successfully</string>
+						<key>scriptTitle</key>
+						<string>Updated Cached Password</string>
+						<key>scriptDescription</key>
+						<string>Updated Cached Password successfully</string>
+						<key>scriptPath</key>
+						<string>cacheADWrapper</string>
+						<key>scriptExtention</key>
+						<string>sh</string>
+						<key>scriptIsInBundle</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>exitCodes</key>
+						<dict>
+							<key>0</key>
+							<dict>
+								<key>scriptFailedDescription</key>
+								<string>Updating Inventory</string>
+								<key>scriptFailedTitle</key>
+								<string>Not Configured</string>
+							</dict>
+						</dict>
+						<key>scriptImage</key>
+						<string>inventory_sm</string>
+						<key>scriptEndTitle</key>
+						<string>Updating Inventory</string>
+						<key>scriptFailedTitle</key>
+						<string>Updating Inventory</string>
+						<key>scriptFailedDescription</key>
+						<string>Unable to Update Inventory</string>
+						<key>scriptWarningTitle</key>
+						<string>Update Inventory (Warning)</string>
+						<key>scriptWarningDescription</key>
+						<string>An issue was deteced updating inventory</string>
+						<key>scriptEndDescription</key>
+						<string>Inventory updating completed</string>
+						<key>scriptTitle</key>
+						<string>Updating Inventory</string>
+						<key>scriptDescription</key>
+						<string>Inventory updating completed</string>
+						<key>scriptPath</key>
+						<string>inventoryUpdate</string>
+						<key>scriptExtention</key>
+						<string>sh</string>
+						<key>scriptIsInBundle</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>exitCodes</key>
+						<dict>
+							<key>0</key>
+							<dict>
+								<key>scriptFailedDescription</key>
+								<string>Clean Up</string>
+								<key>scriptFailedTitle</key>
+								<string>Not Configured</string>
+							</dict>
+						</dict>
+						<key>scriptImage</key>
+						<string>clean_sm</string>
+						<key>scriptEndTitle</key>
+						<string>Clean Up</string>
+						<key>scriptFailedTitle</key>
+						<string>Clean Up</string>
+						<key>scriptFailedDescription</key>
+						<string>Clean Up Failed</string>
+						<key>scriptWarningTitle</key>
+						<string>Clean Up Warning</string>
+						<key>scriptWarningDescription</key>
+						<string>An issue was detected during cleanup</string>
+						<key>scriptEndDescription</key>
+						<string>Cleanup completed</string>
+						<key>scriptTitle</key>
+						<string>Clean Up</string>
+						<key>scriptDescription</key>
+						<string>Cleanup completed</string>
+						<key>scriptPath</key>
+						<string>cleanUp</string>
+						<key>scriptExtention</key>
+						<string>sh</string>
+						<key>scriptIsInBundle</key>
+						<true/>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
